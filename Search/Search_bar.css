@@ -3,17 +3,35 @@
     padding: 0;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0% 100%;
+    background-color: black;
+    height: 75vh;
+    margin: 5em;
+    justify-content: center;
+}
+
+img {
+    width: 4vw;
+    height: 4vw;
+    min-width: 3em;
+    min-height: 3em;
+    margin: 1em;
+}
+
 .search_bar {
     position: relative;
     margin: 0 auto;
-    margin-top: 20px;
     width: 95%;
-    max-width: 344px;
-    height: 48px;
+    max-width: 28em;
+    height: 3em;
     background: #fff;
     border-radius: 2px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
     overflow: hidden;
+    align-self: center;
 }
 
 input {
