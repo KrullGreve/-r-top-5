@@ -7,13 +7,21 @@
 }
 
 .wrapper {
+    position: relative;
+    width: fit-content;
+    margin: 4rem auto;
+} 
+
+.contentBox {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: black;
-    height: 85vh;
-    margin: 5em;
+    height: 83vh;
+    max-width: 95em;
     justify-content: center;
+    position: relative;
+    z-index: 10;
 }
 
 .search {
@@ -34,8 +42,31 @@
 
 .reddit__one, .reddit__two, .reddit__three, .reddit__four, .reddit__five {
     height: 14vw;
-    width: 25vw;
+    width: 22vw;
     background-color: white;
     margin: 1em;
 
+}
+
+
+.wrapper::before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    background-color: #409BA2;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper::after {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #8F6BB5;
+    width: 100%;
+    height: 100%;
 }
