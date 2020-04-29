@@ -1,0 +1,71 @@
+/* GENERAL STYLES */ 
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /*overflow: hidden;*/
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 5% 1fr 5%;
+}
+
+.wrapper {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 10% 90%;
+    background-color: black;
+    height: 75vh;
+    margin: 5em;
+}
+
+.search {
+    width: 5vw;
+    height: 5vw;
+    min-width: 3em;
+    min-height: 3em;
+    justify-self: right;
+    left: 90vw;
+    position: sticky;
+}
+
+.tittle {
+    display: flex;
+    align-self: end;
+    justify-content: center;
+    grid-column: 2;
+    width: 100%;
+    color: white;
+    
+}
+
+.reddit__one, .reddit__two, .reddit__three, .reddit__four, .reddit__five {
+   height: 100px;
+   width: 200px;
+    background-color: white;
+    margin: 1em;
+
+}
+
+.article_wrap{
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    height: 60%;
+    width: 80%;
+    grid-column: 2;
+}
+
+
