@@ -1,0 +1,92 @@
+body{
+    height: 100vh;
+    background-color: #121212;
+}
+.body_Section{
+display: grid;
+height: 100%;
+grid-template-columns: 20% 1fr 20%;
+grid-template-rows: 20% 1fr 20%;
+}
+
+article.topList__article{
+grid-column: 2;
+grid-row: 2;
+background-color: #f3f3f3;
+display: grid;
+grid-template-columns: 5% 1fr 1fr 5%;
+grid-template-rows: 20% 70% 10%;
+}
+.post0{
+    z-index: +2;
+}
+
+.topList__thumbnail{
+    max-height: 100%;
+    max-width: 100%;
+    align-self: center;
+  
+}
+
+.close_button{
+    grid-column: 4;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    font-size: 2em;
+}
+
+.topList__link{
+    grid-column: 2/4;
+    justify-self: center;
+    height: 10%;
+    text-decoration: none;
+    color: black;
+}
+
+.imageWrapper{
+    height: 100%;
+    width: 100%;
+    grid-column: 2;
+    display: flex;
+}
+
+ .comment_wrapper{
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+   
+}
+.comment{
+    height: 100px;
+    width: 45%;
+    background-color: white;
+    padding: 5px;
+    border: solid 0.5px black;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+.comment_p{
+    justify-self: center;
+}
+
+.comment_ups{
+    width: 50%;
+    grid-row: 2;
+}
+.comment_downs{
+    width: 50%;
+    grid-row: 2;
+} 
+ 
+.reddit_redirected{
+grid-column: 3;
+grid-row: 2;
+justify-self: end;
+align-self: end;
+display: flex;
+}
