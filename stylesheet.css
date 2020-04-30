@@ -22,7 +22,6 @@
     grid-template-rows: 10% 90%;
     background-color: black;
     height: 75vh;
-    margin: 5em;
 }
 
 .search {
@@ -46,11 +45,12 @@
 }
 
 .reddit__one, .reddit__two, .reddit__three, .reddit__four, .reddit__five {
-   height: 100px;
-   width: 200px;
+    height: 13vw;
+    width: 16vw;
     background-color: white;
     margin: 1em;
-
+    min-width: 200px;
+    min-height: 150px;
 }
 
 .article_wrap{
@@ -88,4 +88,18 @@
     background-color: #8F6BB5;
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width: 645px){
+    .article_wrap {
+        width: 100%;
+    }
+    .content_box {
+        height: 132vw;
+    }
+}
+@media screen and (max-width: 515px){
+    .content_box {
+        min-height: 70em;
+    }
 }
