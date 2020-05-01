@@ -95,8 +95,8 @@ display: flex;
 .top_posts{
     display: flex;
     flex-direction: column-reverse;
-        height: 25vh;
-        width: 30%;
+        height: 30vh;
+        width: 24em;
         background-color: white;
         margin: 1em;
         padding: 1em;
