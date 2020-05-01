@@ -43,6 +43,7 @@ grid-template-rows: 20% 70% 10%;
     height: 10%;
     text-decoration: none;
     color: black;
+    margin: 2em;
 }
 
 .imageWrapper{
@@ -95,7 +96,6 @@ display: flex;
 .top_posts{
     display: flex;
     flex-direction: column-reverse;
-        height: 30vh;
         width: 24em;
         background-color: white;
         margin: 1em;
